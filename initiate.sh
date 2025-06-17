@@ -1,10 +1,9 @@
 #!/bin/bash
 
-# Cloning
-cd Burpsuite-Professional
-
 version=2025
 url="https://portswigger-cdn.net/burp/releases/download?product=pro&type=Jar"
+
+cd Burpsuite-Professional
 
 # Execute Burpsuite Professional
 echo "Executing Burpsuite Professional..."
@@ -12,3 +11,5 @@ echo "java --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.bas
 chmod +x burpsuitepro
 cp burpsuitepro /bin/burpsuitepro
 (./burpsuitepro)
+
+exit
