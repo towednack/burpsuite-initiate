@@ -1,15 +1,10 @@
 #!/bin/bash
 
 # Cloning
-git clone https://github.com/xiv3r/Burpsuite-Professional.git 
 cd Burpsuite-Professional
 
 version=2025
 url="https://portswigger-cdn.net/burp/releases/download?product=pro&type=Jar"
-
-# Execute Key Generator
-echo "Starting Key loader.jar..."
-(java -jar loader.jar) &
 
 # Execute Burpsuite Professional
 echo "Executing Burpsuite Professional..."
